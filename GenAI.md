@@ -7,8 +7,8 @@
   - relationship between words and phrases. These models can generate contextually relevant text.
   - Generating narrative - langauge translation eg:GPT
 - Image generation
-  - Image generation from **text input**. eg: DALL-E
-  - From **seed image or random input** eg:GAN
+  - Image generation from **text input**. eg: DALL-E( data analysis learning with language model for generation and exploration)
+  - From **seed image or random input** eg:GAN ( generative adversarial networks)
   - Used for creating images from **sketches** eg:fusion models
 - Audio
   - Natural-sounding speech
