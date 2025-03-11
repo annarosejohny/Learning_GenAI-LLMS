@@ -8,7 +8,7 @@
   - Word-based: divides text into individual words
     - advantage: preserves semantic meaning
     - disadvantage: increase the models overall vocabulary
-  - charachter-based: splits text into individual characteristics
+  - character-based: splits text into individual characteristics
     - advantage: smaller vocabularies
     - disadvantage: may not convey the same information as entire words. Increase input dimensionality and computational needs 
   - subword-based: frequently use words unsplit; infrequent words broken down
