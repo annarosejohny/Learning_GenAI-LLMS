@@ -53,6 +53,50 @@
  - **torchtext** It is part of the PyTorch ecosystem, to handle various natural language processing tasks. It simplifies the process of working with text data and provides functionalities for data preprocessing, tokenization, vocabulary management, and batching.
 
 
+## Data loaders
+- Efficient loading and preprocessing of textual data
+- Memory optimization through on-the-fly preprocessing
+- Seamless integration with pytorch training pipeline
+- simplified data augmentation and preprocessing
+- efficient batching and shuffling of data
+- Dataset - Collection of data samples and their labels
+  - Training set
+  - validation set
+  - test set
+- Custom dataset
+![custom_dataset](https://github.com/user-attachments/assets/bf5caaa9-42f3-40fa-9bbc-3031deddc0e4)
+- **Dataloader**
+  - output data as batches instead of one sample at a time.
+  - It is an iterator used for loading, shuffling, and batching dataset
+- **Iterator** -
+  - object that can be looped over
+  - two methods: iter() and next()
+  - data_iter = iter(dataloader) - loads the dataset
+  - next(data_iter) - load next item in the dataset
+- Collate function
+  - Data tranformation
+  - converting tokenized indices
+  - tokenization
+  - transforming the result into a tensor
+    ![collate_Fn](https://github.com/user-attachments/assets/98dcb312-813c-4570-a8ed-ac53792e9d00)
+
+
+## Data quality
+Data quality refers to the accuracy, consistency, and completeness of the dataset used for training. Poor-quality data introduces noise that can lower a model's accuracy and reliability. 
+Here are practices to ensure high data quality:
+
+- **Noise reduction**: Remove irrelevant or repetitive data to help the model focus on significant patterns and linguistic structures. For example, clean datasets by removing typos and irrelevant information, such as forum tags, to enhance quality.
+- **Consistency checks**: Regularly verify consistency to prevent conflicting or outdated information from confusing the model. Consistency is essential for entities, like public figure names or technical terms, ensuring uniform usage throughout the dataset.
+- **Labeling quality**: For labeled datasets, accurate labeling is crucial to avoid misleading the model. Clear guidelines for human annotators can reduce subjective errors and improve labeling quality.
+
+## Diverse representation
+A diverse dataset enhances a model’s inclusivity, ensuring it responds accurately to varied cultural, demographic, and regional inputs. Without diverse representation, models may reflect narrow views, leading to unintentional biases. 
+Here’s how to achieve meaningful diversity:
+- **Inclusion of varied demographics**: Incorporate text from various demographic groups to avoid over-representing a single perspective. Include sources in multiple languages or dialects and represent diverse cultural norms to improve global applicability.
+- **Balanced data sources**: Draw a balanced dataset from sources such as news, social media, literature, and technical documents. This broadens the model’s knowledge base and reduces dependence on any single source.
+- **Regional and linguistic variety**: Including datasets from diverse regions and languages expands the model’s linguistic and cultural context, enhancing accuracy in multilingual contexts and better supporting translation tasks.
+
+
 
 
 
